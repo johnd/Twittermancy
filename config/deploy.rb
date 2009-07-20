@@ -10,7 +10,7 @@ set :domain, 'fury.xybur.net'
 role :app, domain
 role :web, domain
 role :db,  domain, :primary => true
-set :server_name, "twittermancy.urbanpaganism.info"
+set :server_name, "twittermancy.com"
 depend :remote, :command, :gem
 
 # Allow ssh to use ssh keys
