@@ -1,0 +1,45 @@
+body {
+	background-color: white;
+}
+
+#wrapper {
+	display: block;
+	width: 450px;
+	margin: 2px auto;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	border: solid 2px black;
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer, #footer a, #footer a:visited {
+	font-size: 12px;
+	color: black;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	font-size: 12px;
+	color: black;
+	text-decoration: underline;
+}
+
+.word_cloud_2 {
+	font-size: 24px;
+}
+.word_cloud_1 {
+	font-size: 20px;
+}
+.word_cloud_0 {
+	font-size: 18px;
+}

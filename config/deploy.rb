@@ -1,5 +1,5 @@
 set :use_sudo, false
-set :application, "twitermancy"
+set :application, "twittermancy"
 set :repository,  "ssh://code@fury.xybur.net/~/private/#{application}.git"
 set :deploy_to, "/home/john/deploy/#{application}"
 set :user, 'john'
