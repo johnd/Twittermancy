@@ -34,6 +34,16 @@ h1 {
 	text-decoration: underline;
 }
 
+a, a:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
 .word_cloud_2 {
 	font-size: 24px;
 }
