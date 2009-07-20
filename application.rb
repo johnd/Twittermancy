@@ -7,12 +7,16 @@ get '/' do
 end
 
 post '/' do
-  @results = Divination.new(params[:text]).results
   @query = params[:text]
+  @results = Divination.new(URI.escape(@query)).results
   erb :results
 end
 
 get '/:search.json' do
   words = Divination.new(params[:search])
   words.results.to_json
+end
+
+error do
+  'Sorry there was a nasty error - ' + env['sinatra.error'].name
 end
