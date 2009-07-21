@@ -9,6 +9,9 @@
     <div id="wrapper">
       <h1>Twitter Divination Tool</h1>
       <p>This is a tool for performing divination through the medium of <a href="http://twitter.com">Twitter</a>. You supply a keyword which we do a <a href="http://search.twitter.com">Twitter search</a> on, returning a tag-cloud-style jumble of words taken from matching Tweets, which you can interpret.</p>
+<% if @error %>
+  <p class="error"><%= @error %></p>
+<% end %>
 <% if @results %>
 <p><% @results.each do | result | %>
   <span class="word_cloud_<%= rand(3) %>" id="word_cloud_<%= result[:id] %>"><%= result[:word] %></span> 
