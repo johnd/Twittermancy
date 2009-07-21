@@ -9,7 +9,7 @@ end
 post '/' do
   @query = params[:text]
   @results = Divination.new(URI.escape(@query)).results
-  erb :results
+  erb :index
 end
 
 get '/:search.json' do
