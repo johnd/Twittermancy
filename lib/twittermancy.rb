@@ -35,7 +35,7 @@ class Divination
     @feed['results'].each do | entry |
       text = sanitise entry['text']
       word = text.downcase.scan(/\w+/).-([query]).rand
-      results << {:word => word, :tweet => entry["text"], :user => entry['from_user']}
+      results << {:word => word, :tweet => entry["text"], :user => entry['from_user'], :id => entry['id']}
     end
     return results
   end
