@@ -24,3 +24,8 @@ get '/:search.json' do
   words = Divination.new(params[:search])
   words.results.to_json
 end
+
+error do
+  @error = 'Sorry there was a nasty error - ' + env['sinatra.error'].message
+  erb :index
+end
