@@ -14,7 +14,7 @@
 <% end %>
 <% if @results %>
 <p><% @results.each do | result | %>
-  <span class="word_cloud_<%= rand(3) %>" id="word_cloud_<%= result[:id] %>"><%= result[:word] %></span> 
+  <span class="word_cloud_<%= rand(3) %>"><%= result[:word] %><span><%= result[:tweet] %></span></span> 
   <% end %></p>
 <% end %>
   <form action='/' method='post'>

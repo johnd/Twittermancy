@@ -58,3 +58,18 @@ a:hover {
 	font-size: 20px;
 	color: red;
 }
+
+span.word_cloud_2 span, span.word_cloud_1 span, span.word_cloud_0 span   {
+	display:none;
+	padding:2px 3px;
+	margin-left:8px;
+	width:140px;
+	font-size: 12px;
+}
+span.word_cloud_2:hover span, span.word_cloud_1:hover span, span.word_cloud_0:hover span {
+	display:inline; 
+	position:absolute; 
+	background:#ffffff; 
+	border:1px solid #cccccc;
+	color:#6c6c6c;
+}
