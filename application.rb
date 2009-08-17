@@ -7,7 +7,6 @@ get '/' do
 end
 
 post '/' do
-  puts "PARAMS: #{params[:text]}"
   @query = params[:text]
   unless @query.blank?
     @results = Divination.new(URI.escape(@query)).results
