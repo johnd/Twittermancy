@@ -12,5 +12,6 @@ log = File.new("log/sinatra.log", "a+")
 STDOUT.reopen(log)
 STDERR.reopen(log)
 
+APP_ROOT = "#{File.dirname(__FILE__)}/"
 require 'application.rb'
 run Sinatra::Application

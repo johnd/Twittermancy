@@ -7,7 +7,7 @@ class Divination
 
   def initialize(search_term, time_delay=2, cache_root='cache')
 
-    cache_file = cache_root + "/" + Digest::SHA1.hexdigest(search_term)
+    cache_file = APP_ROOT + cache_root + "/" + Digest::SHA1.hexdigest(search_term)
 
     if File.exists?(cache_file) && File.mtime(cache_file) > time_delay.hours.ago
       cache = File.new(cache_file, 'r')

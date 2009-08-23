@@ -1,6 +1,16 @@
 require 'rubygems'
 require 'sinatra'
 require 'lib/twittermancy'
+require 'YAML'
+
+ga_config = YAML.load(File.read(APP_ROOT + "config/googleanalytics.yml"))
+if ga_config
+  google_analytics_id = ga_config.first
+end
+
+before do
+  @google_analytics_id = google_analytics_id
+end
 
 get '/' do
   erb :index
