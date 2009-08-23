@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'lib/twittermancy'
-require 'YAML'
+require 'yaml'
 
 ga_config = YAML.load(File.read(APP_ROOT + "config/googleanalytics.yml"))
 if ga_config
