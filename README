@@ -1,0 +1,10 @@
+Twittermancy
+============
+
+Twittermancy is a simple tool for performing divination using Twitter (http://twitter.com). You can access a live working version of Twittermancy at http://twittermancy.com.
+
+Twittermancy is written using the Sinatra microframework. It's deployed using Capistrano. If you intend to deploy this application yourself, you'll need to edit config/deploy.rb (the Capistrano configuration) and config/googleanalytics.yml (if you're not planning to use Google Analytics, you can remove this file).
+
+Twittermancy is made available under the Attribution-Noncommercial-Share Alike 2.5 Generic licence: http://creativecommons.org/licenses/by-nc-sa/2.5/
+
+Twittermancy was developed by John Daniels <john@semantici.st>
