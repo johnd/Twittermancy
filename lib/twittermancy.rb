@@ -1,6 +1,6 @@
 class Divination
   require 'rubygems'
-  require 'active_support'
+  require 'active_support/all'
   require 'open-uri'
   require 'json'
   require 'digest/sha1'
